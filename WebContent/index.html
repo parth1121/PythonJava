@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script>
+function validate(){
+ let psw =	document.getElementById("psw").value;
+ let cpsw =	document.getElementById("cpsw").value;
+ if(psw == cpsw)
+ {
+	 return true;
+}
+ else {
+	 alert("password and confirm password are not same");
+	 return false;
+ }
+}
+</script>
+<body>
+<form action="/Test/search" onsubmit="return validate()" method="get" style="border:1px solid #ccc">
+    <input type="email"  name="email" id = "email" required>
+    <input type="text" name="psw" id="psw" required>
+    <input type="password" name="psw-repeat" id="cpsw" required>
+    <button type="submit" class="signupbtn">Sign Up</button>
+</form>
+</body>
+</html>
