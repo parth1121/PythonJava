@@ -16,6 +16,7 @@ public class Forget extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
+		System.out.println("Parth");
 	  RequestDispatcher dispatcher = req.getRequestDispatcher("forget.jsp");
 	  dispatcher.forward(req, res);
 	}
